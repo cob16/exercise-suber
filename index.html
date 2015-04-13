@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -10,17 +8,14 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>North Ceredigion Fitness</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom stylesheets -->
     <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,47 +23,164 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">North Ceredigion Fitness</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-
 <div class="container">
+    <div class="row">
 
-    <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" rel="home" href="#" title="North Ceredigion Fitness">North Ceredigion
+                    Fitness</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <div class="col-sm-6 col-md-6">
+                    <form class="navbar-form" role="search" method="get" id="search-form" name="search-form">
+                        <div class="btn-group" style="margin-right:7px;">
+                            <a class="btn btn-primary" href="#">My classes</a>
+
+                        </div>
+
+                        <div class="input-group stylish-input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <ul class="nav navbar-nav navbar-right" style="padding: 7px;">
+                    <li>
+                        <div class="btn-group" style="margin-left:10px;">
+                            <a class="btn btn-warning" href="#">My classes</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-group" style="margin-left:10px;">
+                            <a class="btn btn-warning" href="#">Administrative centre</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-group" style="margin-left:10px;">
+                            <a class="btn btn-danger" href="#">Log out</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-</div><!-- /.container -->
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <a href="#" class="alert-link">
+        There was an update to one of your courses: Swimming. <em>Click here to find out more!</em>.
+        </a>
+    </div>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <div class="col-md-8">
+
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Courses List</div>
+            <div class="panel-body">
+                <p>this could be a disciption, or i might get rid of it</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>Course</th>
+                    <th>Type</th>
+                    <th>Population</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>Adult Beginners swimming</td>
+                    <td>Swimming</td>
+                    <td>4/10</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="10" aria-valuemax="100" style="width: 40%">
+                                <span class="sr-only">60% Complete</span
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>another course</td>
+                    <td>wired</td>
+                    <td>4/10</td>
+                    <td><div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 95%">
+                            <span class="sr-only">60% Complete</span
+                        </div>
+                    </div></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title"> Featured Courses</h2>
+            </div>
+            <div class="panel-body">
+
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2ODc1IiB5PSIzMiIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjY0eDY0PC90ZXh0PjwvZz48L3N2Zz4=" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Adult Beginners swimming</h4>
+                        For total beginners ready to get there foot in the door!
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2ODc1IiB5PSIzMiIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjY0eDY0PC90ZXh0PjwvZz48L3N2Zz4=" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Adult Beginners swimming</h4>
+                        For total beginners ready to get there foot in the door!
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2ODc1IiB5PSIzMiIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjY0eDY0PC90ZXh0PjwvZz48L3N2Zz4=" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Adult Beginners swimming</h4>
+                        For total beginners ready to get there foot in the door!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</div> <!-- container -->
 </body>
 </html>
-
