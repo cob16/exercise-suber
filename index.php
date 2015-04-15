@@ -25,63 +25,8 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
 
-        <div class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" rel="home" href="#" title="North Ceredigion Fitness">North Ceredigion
-                    Fitness</a>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <div class="col-sm-6 col-md-6">
-                    <form class="navbar-form" role="search" method="get" id="search-form" name="search-form">
-                        <div class="btn-group" style="margin-right:7px;">
-                            <a class="btn btn-primary" href="#">My classes</a>
-
-                        </div>
-
-                        <div class="input-group stylish-input-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-addon">
-                        <button type="submit">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        </button>
-                    </span>
-                        </div>
-                    </form>
-
-
-                </div>
-
-                <ul class="nav navbar-nav navbar-right" style="padding: 7px;">
-                    <li>
-                        <div class="btn-group" style="margin-left:10px;">
-                            <a class="btn btn-warning" href="#">My classes</a>
-
-                        </div>
-                    </li>
-                    <li>
-                        <div class="btn-group" style="margin-left:10px;">
-                            <a class="btn btn-warning" href="#">Administrative centre</a>
-
-                        </div>
-                    </li>
-                    <li>
-                        <div class="btn-group" style="margin-left:10px;">
-                            <a class="btn btn-danger" href="#">Log out</a>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php require("header.html"); ?>
 
     <div class="alert alert-warning alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -90,7 +35,7 @@
         </a>
     </div>
 
-
+    <div class="row">
     <div class="col-md-8">
 
         <div class="panel panel-default">
@@ -177,6 +122,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
 
