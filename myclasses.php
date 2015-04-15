@@ -10,6 +10,9 @@
 
     <title>North Ceredigion Fitness</title>
 
+    <!-- jQuwery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,8 +25,79 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body>
 <div class="container">
 
 <?php require("header.html"); ?>
+
+        <div id="le-alert" class="alert alert-success alert-block fade">
+            <button href="#" type="button" class="close">&times;</button>
+            <!--        <h4>Alert title</h4>-->
+            <p>Unsubscribe/s sucessfull...</p>
+        </div>
+
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Your currently subscribed courses</div>
+
+            <!-- Table -->
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>Course</th>
+                    <th>Type</th>
+                    <th><button type="button" onclick="confirmBox()" class="btn btn-danger" id="the-thing-that-opens-your-alert">Unsubcribe</button></th>
+
+                </tr>
+                <tr>
+                    <td>Adult Beginners swimming</td>
+                    <td>Swimming</td>
+                    <td>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="test" >another course</td>
+                    <td>wired</td>
+                    <td>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""></label>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <script>
+                    $('#the-thing-that-opens-your-alert').click(function () {
+                        $('#le-alert').addClass('in'); // shows alert with Bootstrap CSS3 implem
+                    });
+
+                    $('.close').click(function () {
+                        $(this).parent().removeClass('in'); // hides alert with Bootstrap CSS3 implem
+                    });
+                </script>
+
+                <script>
+                    function confirmBox() {
+                        var x;
+                        if (confirm("Are you shure you wish to unsubscribe!") == true) {
+                            x = "You pressed OK!";
+                            $('#le-alert').addClass('in');
+                        }
+
+                        document.getElementById("demo").innerHTML = x;
+                        $('#the-thing-that-opens-your-alert').click(function () {
+                            $('#le-alert').addClass('in'); // shows alert with Bootstrap CSS3 implem
+                        });
+                    }
+                    </script>
+
+            </table>
+        </div>
+
+</div> <!-- container -->
+</body>
+</html>

@@ -105,8 +105,8 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Adult Beginners swimming</h4>
-                        For total beginners ready to get there foot in the door!
+                        <h4 class="media-heading">Introduction to weight Lifting<h4>
+                            Beginners welcome!
                     </div>
                 </div>
                 <div class="media">
@@ -123,8 +123,6 @@
             </div>
         </div>
     </div>
-
-
 
 
 </div> <!-- container -->
