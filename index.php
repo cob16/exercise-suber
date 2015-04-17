@@ -11,11 +11,31 @@
     <title>North Ceredigion Fitness</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Custom stylesheets -->
     <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- jplist core -->
+    <script src="jplist-core.min.js"></script>
+
+    <!-- jplist bootstrap filter dropdown control -->
+    <script src="jplist.boot-filter-dropdown.min.js"></script>
+
+    <script>
+        $('document').ready(function(){
+
+            $('#demo').jplist({
+                itemsBox: '.list'
+                ,itemPath: '.list-item'
+                ,panelPath: '.jplist-panel'
+            });
+
+        });
+    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,94 +56,220 @@
     </div>
 
     <div class="row">
-    <div class="col-md-8">
+        <div class="col-md-8 col-sm-12">
 
-        <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">Courses List</div>
-            <div class="panel-body">
-                <p>this could be a disciption, or i might get rid of it</p>
-            </div>
+                            <!-- Table -->
+                <table class="table table-striped table-hover" id="classes">
+                    <tr>
+                        <th>Course</th>
+                        <th><div
+                                class="dropdown pull-left"
+                                data-control-type="boot-filter-drop-down"
+                                data-control-name="category-filter"
+                                data-control-action="filter">
 
-            <!-- Table -->
-            <table class="table table-striped table-hover">
-                <tr>
-                    <th>Course</th>
-                    <th>Type</th>
-                    <th>Population</th>
-                    <th>Percentage</th>
-                </tr>
-                <tr>
-                    <td>Adult Beginners swimming</td>
-                    <td>Swimming</td>
-                    <td>4/10</td>
-                    <td>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="10" aria-valuemax="100" style="width: 40%">
+                                <button
+                                    class="btn btn-primary dropdown-toggle"
+                                    type="button"
+                                    data-toggle="dropdown"
+                                    id="dropdown-menu-1"
+                                    aria-expanded="true">
+                                    <span data-type="selected-text">Type</span>
+                                    <span class="caret"></span>
+                                </button>
+
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-menu-1">
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#">Swimming</a>
+                                    </li>
+
+                                    <li role="presentation" class="divider"></li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-path=".other">Other</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th>
+                            <div
+                                class="dropdown pull-left"
+                                data-control-type="boot-filter-drop-down"
+                                data-control-name="category-filter"
+                                data-control-action="filter">
+
+                                <button
+                                    class="btn btn-primary dropdown-toggle"
+                                    type="button"
+                                    data-toggle="dropdown"
+                                    id="dropdown-menu-1"
+                                    aria-expanded="true">
+                                    <span data-type="selected-text">Difficulty</span>
+                                    <span class="caret"></span>
+                                </button>
+
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-menu-1">
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#">Beginners</a>
+                                    </li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-path=".christmas" data-default="true">Intermediate</a>
+                                    </li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-path=".food">Advanced</a>
+                                    </li>
+
+                                    <li role="presentation" class="divider"></li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-path=".nature">Expert</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </th>
+                        <th><div
+                                class="dropdown pull-left"
+                                data-control-type="boot-filter-drop-down"
+                                data-control-name="category-filter"
+                                data-control-action="filter">
+
+                                <button
+                                    class="btn btn-primary dropdown-toggle"
+                                    type="button"
+                                    data-toggle="dropdown"
+                                    id="dropdown-menu-1"
+                                    aria-expanded="true">
+                                    <span data-type="selected-text">Attendants</span>
+                                    <span class="caret"></span>
+                                </button>
+
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-menu-1">
+
+                                    <li>
+                                        <a role="menuitem" tabindex="-1" href="#">Hide Full <input type="checkbox" value="" style="margin-right: 10px;"></a>
+                                    </li>
+
+                                    <li role="presentation" class="divider"></li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#">90%</a>
+                                    </li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#">50%</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#">25%</a>
+                                    </li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#">0%</a>
+                                    </li>
+
+                                    <li role="presentation" class="divider"></li>
+
+                                    <li role="presentation">
+                                        <a role="menuitem" tabindex="-1" href="#" data-path=".other">Other</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Adult Beginners swimminge</td>
+                        <td>Swimming</td>
+                        <td><div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 10%%">
+                                    <span class="sr-only">60% Complete</span
+                                </div>
+                            </div></td>
+                        <td>4/10</td>
+                    </tr>
+                    <tr>
+                        <td>Adult Exercise Swimming</td>
+                        <td>Swimming</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="10" aria-valuemax="100" style="width: 50%">
+                                    <span class="sr-only">60% Complete</span
+                                </div>
+                            </div>
+                        </td>
+                        <td>4/10</td>
+                    </tr>
+                    <tr>
+                        <td>Adult Advanced Skills Swimming</td>
+                        <td>Swimming</td>
+                        <td><div class="progress">
+                            <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 100%">
                                 <span class="sr-only">60% Complete</span
                             </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>another course</td>
-                    <td>wired</td>
-                    <td>4/10</td>
-                    <td><div class="progress">
-                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 95%">
-                            <span class="sr-only">60% Complete</span
-                        </div>
-                    </div></td>
-                </tr>
-            </table>
+                        </div></td>
+                        <td>4/10</td>
+                    </tr>
+                    <tr>
+                        <td>tempor ante ut mattis</td>
+                        <td>tellus</td>
+                        <td><div class="progress">
+                                <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 50%">
+                                    <span class="sr-only">60% Complete</span
+                                </div>
+                            </div></td>
+                        <td>4/10</td>
+                    </tr>
+                    <tr>
+                        <td>Adult Advanced Exercise Swimming</td>
+                        <td>Swimming</td>
+                        <td><div class="progress">
+                                <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 100%">
+                                    <span class="sr-only">60% Complete</span
+                                </div>
+                            </div></td>
+                        <td>4/10</td>
+                    </tr>
+                    <tr>
+                        <td>tempor ante ut mattis</td>
+                        <td>tellus</td>
+                        <td><div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 10%%">
+                                    <span class="sr-only">60% Complete</span
+                                </div>
+                            </div></td>
+                        <td>4/10</td>
+                    </tr>
+
+                </table>
+
         </div>
 
-    </div>
+        <div class="col-md-4">
+             <div class="list-group">
+                 <a class="list-group-item active" href="#">
+                     <h4 class="list-group-item-heading">Featured Courses</h4>
+                 </a>
+                 <a class="list-group-item" href="#">
+                     <h4 class="list-group-item-heading">Adult Beginners swimming</h4>
+                     <p class="list-group-item-text">For total beginners ready to get there foot in the door!</p>
+                 </a>
+                 <a class="list-group-item" href="#">
+                     <h4 class="list-group-item-heading">Adult Beginners swimming</h4>
+                     <p class="list-group-item-text">For total beginners ready to get there foot in the door!</p>
+                 </a>
+                 <a class="list-group-item" href="#">
+                     <h4 class="list-group-item-heading">Adult Beginners swimming</h4>
+                     <p class="list-group-item-text">For total beginners ready to get there foot in the door!</p>
+                 </a>
+             </div>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h2 class="panel-title"> Featured Courses</h2>
-            </div>
-            <div class="panel-body">
-
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2ODc1IiB5PSIzMiIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjY0eDY0PC90ZXh0PjwvZz48L3N2Zz4=" alt="...">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Adult Beginners swimming</h4>
-                        For total beginners ready to get there foot in the door!
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2ODc1IiB5PSIzMiIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjY0eDY0PC90ZXh0PjwvZz48L3N2Zz4=" alt="...">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Introduction to weight Lifting<h4>
-                            Beginners welcome!
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGRlZnMvPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjEzLjQ2ODc1IiB5PSIzMiIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjY0eDY0PC90ZXh0PjwvZz48L3N2Zz4=" alt="...">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Adult Beginners swimming</h4>
-                        For total beginners ready to get there foot in the door!
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-
+</div>
 
 </div> <!-- container -->
 </body>

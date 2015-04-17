@@ -2,3 +2,7 @@
   background-color: #2d3f56;
   color:#eeeeee;
 }
+
+.navbar-default .navbar-brand {
+  color: #333;
+}
