@@ -151,7 +151,7 @@
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-menu-1">
 
                                     <li>
-                                        <a role="menuitem" tabindex="-1" href="#">Hide Full <input type="checkbox" value="" style="margin-right: 10px;"></a>
+                                        <a role="menuitem" tabindex="-1" href="#">Hide Full <input type="checkbox" value="" style="margin-right: 10px;" title="Hide full"></a>
                                     </li>
 
                                     <li role="presentation" class="divider"></li>
@@ -245,9 +245,29 @@
 
                 </table>
 
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
         </div>
 
-        <div class="col-md-4 col-md-12">
+        <div class="col-md-4 col-sm-12">
              <div class="list-group">
                  <a class="list-group-item active" href="#">
                      <h4 class="list-group-item-heading">Featured Courses</h4>
