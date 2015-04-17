@@ -177,7 +177,7 @@
                     </th>
                 </tr>
                 <tr>
-                    <td>Adult Beginners swimminge</td>
+                    <td><a href="classInfo.php">Adult Beginners swimminge</a></td>
                     <td>Swimming</td>
                     <td><div class="progress">
                             <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 10%%">
@@ -187,7 +187,7 @@
                     <td>4/10</td>
                 </tr>
                 <tr>
-                    <td>Adult Exercise Swimming</td>
+                    <td><a href="classInfo.php">Adult Exercise Swimming</a></td>
                     <td>Swimming</td>
                     <td>
                         <div class="progress">
@@ -199,7 +199,7 @@
                     <td>4/10</td>
                 </tr>
                 <tr>
-                    <td>Adult Advanced Skills Swimming</td>
+                    <td><a href="classInfo.php">Adult Advanced Skills Swimming</a></td>
                     <td>Swimming</td>
                     <td><div class="progress">
                             <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 100%">
@@ -209,7 +209,7 @@
                     <td>4/10</td>
                 </tr>
                 <tr>
-                    <td>tempor ante ut mattis</td>
+                    <td><a href="classInfo.php">tempor ante ut mattis</a></td>
                     <td>tellus</td>
                     <td><div class="progress">
                             <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 50%">
@@ -219,7 +219,7 @@
                     <td>4/10</td>
                 </tr>
                 <tr>
-                    <td>Adult Advanced Exercise Swimming</td>
+                    <td><a href="classInfo.php">Adult Advanced Exercise Swimming</a></td>
                     <td>Swimming</td>
                     <td><div class="progress">
                             <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 100%">
@@ -229,7 +229,7 @@
                     <td>4/10</td>
                 </tr>
                 <tr>
-                    <td>tempor ante ut mattis</td>
+                    <td><a href="classInfo.php">tempor ante ut mattis</a></td>
                     <td>tellus</td>
                     <td><div class="progress">
                             <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 10%%">
