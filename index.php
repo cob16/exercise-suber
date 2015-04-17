@@ -247,7 +247,7 @@
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-md-12">
              <div class="list-group">
                  <a class="list-group-item active" href="#">
                      <h4 class="list-group-item-heading">Featured Courses</h4>
