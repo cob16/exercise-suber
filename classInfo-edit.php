@@ -53,13 +53,10 @@
         <h1>Example page header
             <a class="btn btn-danger" href="#" style="margin-left: 10px;">Subscribe</a>
             <div class="btn-group navbar-right">
-                <a class="btn btn-primary" href="classInfo-edit.php">
-                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    Class
+                <a class="btn btn-primary" href="classInfo.php">
+                    <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+                    Save and Return
                 </a>
-                <a class="btn btn-primary" href="classList.php">
-                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                    Attendance List</a>
             </div>
         </h1>
     </div>
@@ -111,10 +108,20 @@
                         <td>Main gym</td>
                         <td>06:00</td>
                     </tr>
+                    <tr>
+                        <td>
+                            <a class="btn btn-primary" href="classInfo-edit.php">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                 Class
+                            </a>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
             </table>
 
             <table class="table">
-<!--                <h4 class="table-heading">Class stats</h4>-->
+                <!--                <h4 class="table-heading">Class stats</h4>-->
                 <tr>
                     <td>Subscribers:</td>
                     <td>
@@ -144,7 +151,7 @@
                     <h3 class="panel-title">Who is it for</h3>
                 </div>
                 <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum massa.
+                    <textarea class="form-control" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum massa.</textarea>
                 </div>
             </div>
         </div>
@@ -159,7 +166,8 @@
                     <h3 class="panel-title">What to expect</h3>
                 </div>
                 <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum massa. Duis bibendum convallis tellus, nec porta enim pulvinar suscipit. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas elit sed est venenatis, eu lacinia orci pulvinar. Aliquam consectetur a massa quis tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas viverra orci eget blandit efficitur. Etiam dignissim, nulla convallis sagittis semper, felis orci vulputate sem, egestas cursus libero nulla egestas sapien. Integer tempor et magna at suscipit. Vivamus ante mi, accumsan sed efficitur non, placerat et libero. In mollis risus ut magna euismod pretium. Quisque porttitor lacus vitae scelerisque cursus. In accumsan arcu lectus, vel pharetra sapien fermentum at. Vestibulum iaculis metus nec porta pulvinar.
+                    <textarea class="form-control" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum massa. Duis bibendum convallis tellus, nec porta enim pulvinar suscipit. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas elit sed est venenatis, eu lacinia orci pulvinar. Aliquam consectetur a massa quis tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas viverra orci eget blandit efficitur. Etiam dignissim, nulla convallis sagittis semper, felis orci vulputate sem, egestas cursus libero nulla egestas sapien. Integer tempor et magna at suscipit. Vivamus ante mi, accumsan sed efficitur non, placerat et libero. In mollis risus ut magna euismod pretium. Quisque porttitor lacus vitae scelerisque cursus. In accumsan arcu lectus, vel pharetra sapien fermentum at. Vestibulum iaculis metus nec porta pulvinar.
+                    </textarea>
                 </div>
             </div>
         </div>
@@ -170,7 +178,8 @@
                     <h3 class="panel-title">What to Bring</h3>
                 </div>
                 <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum massa. Duis bibendum convallis tellus, nec porta enim pulvinar suscipit. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas elit sed est venenatis, eu lacinia orci pulvinar. Aliquam consectetur a massa quis tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas viverra orci eget blandit efficitur. Etiam dignissim, nulla convallis sagittis semper, felis orci vulputate sem, egestas cursus libero nulla egestas sapien. Integer tempor et magna at suscipit. Vivamus ante mi, accumsan sed efficitur non, placerat et libero. In mollis risus ut magna euismod pretium. Quisque porttitor lacus vitae scelerisque cursus. In accumsan arcu lectus, vel pharetra sapien fermentum at. Vestibulum iaculis metus nec porta pulvinar.
+                     <textarea class="form-control" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in dictum massa. Duis bibendum convallis tellus, nec porta enim pulvinar suscipit. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas elit sed est venenatis, eu lacinia orci pulvinar. Aliquam consectetur a massa quis tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas viverra orci eget blandit efficitur. Etiam dignissim, nulla convallis sagittis semper, felis orci vulputate sem, egestas cursus libero nulla egestas sapien. Integer tempor et magna at suscipit. Vivamus ante mi, accumsan sed efficitur non, placerat et libero. In mollis risus ut magna euismod pretium. Quisque porttitor lacus vitae scelerisque cursus. In accumsan arcu lectus, vel pharetra sapien fermentum at. Vestibulum iaculis metus nec porta pulvinar.
+                     </textarea>
                 </div>
             </div>
         </div>
