@@ -38,6 +38,39 @@
             <p>Unsubscribe/s sucessfull...</p>
         </div>
 
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Courses you run</div>
+
+        <!-- Table -->
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Course</th>
+                <th>Attendance</th>
+
+            </tr>
+            <tr>
+                <td><a href="classInfo.php">Adult Beginners swimming</a></td>
+                <td><div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 10%%">
+                            <span class="sr-only">60% Complete</span
+                        </div>
+                    </div></td>
+            </tr>
+            <tr>
+                <td><a href="classInfo.php">Adult Beginners swimming</a></td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 10%%">
+                            <span class="sr-only">60% Complete</span
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
         <div class="panel panel-default">
             <!-- Default panel contents -->
             <div class="panel-heading">Your currently subscribed courses</div>

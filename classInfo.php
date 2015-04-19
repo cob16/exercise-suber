@@ -55,11 +55,11 @@
             <div class="btn-group navbar-right">
                 <a class="btn btn-primary" href="#">
                     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    Edit
+                    Class
                 </a>
-                <a class="btn btn-primary" href="#">
+                <a class="btn btn-primary" href="classList.php">
                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                    View class list</a>
+                    Attendance List</a>
             </div>
         </h1>
     </div>
