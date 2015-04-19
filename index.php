@@ -52,3 +52,13 @@
     <?php require("header-login.html"); ?>
 
     <?php require("main-content.html"); ?>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                This web page is for an assignment
+                The information provided on this and other pages by me, Cormac Brady (cob16@aber.ac.uk), is under my own personal responsibility and not that of Aberystwyth University. Similarly, any opinions expressed are my own and are in no way to be taken as those of A.U. The use of the University's logo or crest is not allowed on individual user's web pages.
+            </p
+        </div>
+    </div>
