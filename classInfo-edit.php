@@ -50,15 +50,13 @@
     <?php require("header.html"); ?>
 
     <div class="page-header">
-        <h1>Example page header
-            <a class="btn btn-danger" href="#" style="margin-left: 10px;">Subscribe</a>
+       <textarea class="form-control" style="font-size: xx-large" rows="1">Example page header</textarea>
             <div class="btn-group navbar-right">
                 <a class="btn btn-primary" href="classInfo.php">
                     <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
                     Save and Return
                 </a>
             </div>
-        </h1>
     </div>
 
     <div class="row">
