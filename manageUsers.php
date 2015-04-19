@@ -22,9 +22,6 @@
     <!-- jplist core -->
     <script src="jplist-core.min.js"></script>
 
-    <!-- jplist bootstrap filter dropdown control -->
-    <script src="jplist.boot-filter-dropdown.min.js"></script>
-
     <script>
         $('document').ready(function(){
 
